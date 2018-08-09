@@ -3,7 +3,7 @@ def my_select(collection)
  i = 0 
  sorted = []
  while i < collection.length
-  if yield(i) 
+  if !yield(i) 
     sorted.push(collection[i])
   end
   i += 1

@@ -6,6 +6,7 @@ def my_select(collection)
   if yield(i) == true
     sorted.push(collection[i])
   end
+  i += 1
 end
 sorted
 end

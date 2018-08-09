@@ -1,3 +1,11 @@
 def my_select(collection)
  # your code here!
+ i = 0 
+ sorted = []
+ while i < collection.length
+  if yield(i) == true
+    sorted.push(collection[i])
+  end
+end
+sorted
 end
